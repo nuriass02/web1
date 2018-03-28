@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.jpg">
+    <script src="js/jquery.min.js.descarga"></script>
+    <script type='text/javascript.js' src="js/javascript.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/album.css" rel="stylesheet">
+    <link href="./css/carrito2.css" rel="stylesheet" type="text/css">
+
+
+    <title>Bymerings</title>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.add-to-cart').on('click',function(){
+            //Scroll to top if cart icon is hidden on top
+            $('html, body').animate({
+                'scrollTop' : $(".cart_anchor").position().top
+            });
+            //Select item image and pass to the function
+            var itemImg = $(this).parent().parent().parent().parent().parent().find('img');
+            //var item = $(this).parent().parent().parent().parent().children();
+            flyToElement($(itemImg), $('.cart_anchor'));
+        });
+    });
+    </script>
+  </head>
+
+  <body>
+
+    <header class="nunu">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="barra">
+
+        <a class="navbar-brand"> <img src="img/bymeicon.jpg" style="width:70px;height:50px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">INICIO <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="album.html">PENDIENTES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="galeria2.html">GALERIA</a>
+            </li>
+          </ul>
+          <form>
+          <a href="https://www.instagram.com/bymerings/"> <img src="img/iconinstacontact.png" alt="Visita nuestro insta" style="width:30px;height:30px;"></a>
+          <a href="mailto:bymerings@gmail.com"> <img src="img/iconemailcontact.png" alt="Contáctanos para cualquier duda" style="width:30px;height:30px;"></a>
+          </form>
+
+        </div>
+      </nav>
+
+    </header>
+
+    <main role="main">
+
+
+<br></br>
+
+
+    <!--  <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Album example</h1>
+          <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+          <p>
+            <a href="#" class="btn btn-primary my-2">Main call to action</a>
+            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+          </p>
+        </div>
+      </section> -->
+      <a class="cart_anchor" src="img/iconocarro.png"></a>
+
+      <div class="album py-5 bg-light" id="nunu">
+        <div class="container">
+
+          <div class="row" id="nunu">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+
+                <img class="card-img-top" class="add-to-cart" src="img/IMG-20180127-WA0014.jpg" alt="Nyumbu" width="200" height="350">
+                <div class="card-body">
+                  <p class="card-text">Nyumbu</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+  <button type="button" class="btn btn-sm btn-outline-secondary"> <a href="javascript:void(0);" class="add-to-cart">Añadir al carrito</button> </a>                    </div>
+                    <small class="text-muted">8€</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4" id="nunu">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="img/IMG-20180303-WA0074.jpg" alt="Wicklow" width="200" height="350">
+                <div class="card-body">
+                  <p class="card-text">Wicklow</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Añadir al carrito</button>
+                    </div>
+                    <small class="text-muted">7€</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4" id="nunu">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="img/aure.jpg" alt="Aure" width="200" height="350">
+                <div class="card-body">
+                  <p class="card-text">Aure</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Añadir al carrito</button>
+                    </div>
+                    <small class="text-muted">6€</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4" id="nunu">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="img/IMG-20180316-WA0013.jpg" alt="Sasfee" width="200" height="350">
+                <div class="card-body">
+                  <p class="card-text">Sasfee</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Añadir al carrito</button>
+                    </div>
+                    <small class="text-muted">6€</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4" id="nunu">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="img/olare.jpg" alt="Olare" width="200" height="350">
+                <div class="card-body">
+                  <p class="card-text">Olare</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Añadir al carrito</button>
+                    </div>
+                    <small class="text-muted">7€</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4" id="nunu">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="img/IMG-20180316-WA0004.jpg" alt="Alona" width="200" height="350">
+                <div class="card-body">
+                  <p class="card-text">Alona</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" id="carrito">Añadir al carrito</button>
+                    </div>
+                    <small class="text-muted">8€</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </ul>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2018 Bymerings  &middot; <a href="#">Términos y condiciones</a></p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+
+  </body>
+</html>
